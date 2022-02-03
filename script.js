@@ -1,14 +1,12 @@
-let num = 266219;
-num = String(num);
-let numLength = num.length;
-let product = 1;
-let degree;
+"use strict";
+let lang = prompt("Выбирете язык: ru или en");
 
-for (let i = 0; i < numLength; i++) {
-  product *= num[i];
+if (lang == "ru") {
+  console.log(
+    "Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье"
+  );
+} else if (lang == "en") {
+  console.log("Monday, tuesday, wednesday, thursday, friday, saturday, sunday");
+} else {
+  console.log("Неверно выбран язык");
 }
-console.log(product);
-
-degree = product ** 3;
-degree = String(degree);
-console.log(degree.substring(0, 2));
